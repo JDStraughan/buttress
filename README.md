@@ -6,26 +6,28 @@ Basic rails app setup with basic frontend framework, auth module, user roles, cr
 
 A basic Rails 3 application setup using the following gems: 
 
- - [mysql2](https://github.com/brianmario/mysql2)
- - [twitter-bootstrap-rails](https://github.com/seyhunak/twitter-bootstrap-rails)
- - [json](http://flori.github.com/json/)
- - [jquery-rails](https://github.com/rails/jquery-rails)
+ - [twitter-bootstrap-rails](https://github.com/seyhunak/twitter-bootstrap-rails) <a href="http://railscasts.com/episodes/328-twitter-bootstrap-basics"><img width="70" height="12" src="http://oi49.tinypic.com/s5wn05.jpg" border=0  style="margin: 2px 0 -2px 0"></img></a>
+ - [jquery-rails](https://github.com/rails/jquery-rails) <a href="http://railscasts.com/episodes/136-jquery-ajax-revised"><img width="70" height="12" src="http://oi49.tinypic.com/s5wn05.jpg" border=0  style="margin: 2px 0 -2px 0" /></a>
  - [jquery-ui-rails](https://github.com/joliss/jquery-ui-rails)
- - [devise](https://github.com/plataformatec/devise)
- - [cancan](https://github.com/ryanb/cancan)
- - [draper](https://github.com/drapergem/draper)
+ - [devise](https://github.com/plataformatec/devise) <a href="http://railscasts.com/episodes/209-devise-revised"><img width="70" height="12" src="http://oi49.tinypic.com/s5wn05.jpg" border=0  style="margin: 2px 0 -2px 0" /></a>
+ - [cancan](https://github.com/ryanb/cancan) <a href="http://railscasts.com/episodes/210-customizing-devise"><img width="70" height="12" src="http://oi49.tinypic.com/s5wn05.jpg" border=0  style="margin: 2px 0 -2px 0" /></a>
+ - [draper](https://github.com/drapergem/draper) <a href="http://railscasts.com/episodes/286-draper"><img width="70" height="12" src="http://oi49.tinypic.com/s5wn05.jpg" border=0  style="margin: 2px 0 -2px 0" /></a>
  - [enum_simulator](https://github.com/centresource/enum_simulator)
- - [will_paginate](https://github.com/mislav/will_paginate)
- - [factory\_girl\_rails](http://github.com/thoughtbot/factory_girl_rails)
- - [rspec-rails](https://github.com/rspec/rspec-rails)
- - [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers)
- - [capybara](https://github.com/jnicklas/capybara)
- - [launchy](https://github.com/copiousfreetime/launchy)
- - [database_cleaner](https://github.com/bmabey/database_cleaner)
- - [guard-rspec](https://github.com/guard/guard-rspec)
- - [faker](http://faker.rubyforge.org/)
+ - [will_paginate](https://github.com/mislav/will_paginate) <a href="http://railscasts.com/episodes/51-will-paginate-revised"><img width="70" height="12" src="http://oi49.tinypic.com/s5wn05.jpg" border=0  style="margin: 2px 0 -2px 0" /></a>
  - [thin](http://code.macournoyer.com/thin/)
+ - [mysql2](https://github.com/brianmario/mysql2)
  - [pg](https://bitbucket.org/ged/ruby-pg/wiki/Home)
+
+and a few for testing:
+
+ - [factory\_girl\_rails](http://github.com/thoughtbot/factory_girl_rails) <a href="http://railscasts.com/episodes/158-factories-not-fixtures-revised"><img width="70" height="12" src="http://oi49.tinypic.com/s5wn05.jpg" border=0  style="margin: 2px 0 -2px 0" /></a>
+ - [rspec-rails](https://github.com/rspec/rspec-rails) <a href="http://railscasts.com/episodes/257-request-specs-and-capybara"><img width="70" height="12" src="http://oi49.tinypic.com/s5wn05.jpg" border=0  style="margin: 2px 0 -2px 0" /></a>
+ - [shoulda-matchers](https://github.com/thoughtbot/shoulda-matchers) 
+ - [capybara](https://github.com/jnicklas/capybara) <a href="http://railscasts.com/episodes/257-request-specs-and-capybara"><img width="70" height="12" src="http://oi49.tinypic.com/s5wn05.jpg" border=0  style="margin: 2px 0 -2px 0" /></a>
+ - [launchy](https://github.com/copiousfreetime/launchy) <a href="http://railscasts.com/episodes/257-request-specs-and-capybara"><img width="70" height="12" src="http://oi49.tinypic.com/s5wn05.jpg" border=0  style="margin: 2px 0 -2px 0" /></a>
+ - [database_cleaner](https://github.com/bmabey/database_cleaner) <a href="http://railscasts.com/episodes/257-request-specs-and-capybara"><img width="70" height="12" src="http://oi49.tinypic.com/s5wn05.jpg" border=0  style="margin: 2px 0 -2px 0" /></a>
+ - [guard-rspec](https://github.com/guard/guard-rspec) <a href="http://railscasts.com/episodes/275-how-i-test"><img width="70" height="12" src="http://oi49.tinypic.com/s5wn05.jpg" border=0  style="margin: 2px 0 -2px 0" /></a>
+ - [faker](http://faker.rubyforge.org/) <a href="http://railscasts.com/episodes/126-populating-a-database"><img width="70" height="12" src="http://oi49.tinypic.com/s5wn05.jpg" border=0  style="margin: 2px 0 -2px 0" /></a>
 
 ## What it is not
 
