@@ -11,6 +11,7 @@ describe User do
     it { should respond_to :last_name }
     it { should respond_to :email }
     it { should respond_to :password }
+    it { should respond_to :is_admin }
 
     it { should validate_presence_of(:first_name) }
     it { should_not allow_value("a"*51).for(:first_name) }
@@ -32,7 +33,7 @@ describe User do
   end
 
   context "Instance Methods" do
-    
+    it { should respond_to(:full_name) }
   end
 
 end
