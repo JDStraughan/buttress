@@ -25,5 +25,16 @@ class Ability
     #
     # See the wiki for details: https://github.com/ryanb/cancan/wiki/Defining-Abilities
     
+    # initialize a new user
+    user ||= User.new
+
+    # allow reading of all
+    can :read, :all
+
+    # if admin, manage all
+    if user.is_admin?
+      can :manage, :all
+    end
+    
   end
 end
