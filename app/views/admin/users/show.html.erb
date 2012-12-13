@@ -2,24 +2,24 @@
 
 <p>
   <b>First name:</b>
-  <%= @admin_user.first_name %>
+  <%= @user.first_name %>
 </p>
 
 <p>
   <b>Last name:</b>
-  <%= @admin_user.last_name %>
+  <%= @user.last_name %>
 </p>
 
 <p>
   <b>Email:</b>
-  <%= @admin_user.email %>
+  <%= @user.email %>
 </p>
 
 <p>
   <b>Created on:</b>
-  <%= @admin_user.created_on %>
+  <%= @user.created_at %>
 </p>
 
 
-<%= link_to 'Edit', edit_admin_user_path(@admin_user) %> |
+<%= link_to 'Edit', edit_admin_user_path(@user) %> |
 <%= link_to 'Back', admin_users_path %>
