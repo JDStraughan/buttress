@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 
+# The verison of rails we support
 gem 'rails', '3.2.8'
-
-gem 'mysql2'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -15,6 +14,8 @@ end
 
 # Twitter bootstrap baby
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+# Incase you want less
+gem 'less-rails'
 # json
 gem 'json'
 # jQuery is the win
@@ -30,13 +31,20 @@ gem 'draper'
 gem 'enum_simulator'
 # Pagination
 gem 'will_paginate', '~> 3.0'
-# Need this for db:populate
+# Provides text comparison support
+gem "text", "~> 1.2.1"
 
+# Develop and Test Environments
+# Generally speaking this is for developing in webrick/thin on your local box -- not production
 group :development, :test do
-  
+  # In development we use mysql
+  gem 'mysql2'
+
   # Cannot run as gem and use heroku
   # See: http://stackoverflow.com/questions/6288910/heroku-deployment-gemfile-lock-problem
   # gem 'rb-fsevent', :require => false if RUBY_PLATFORM =~ /darwin/i
+
+  # Some other fairly awesome gems for development!
   gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
@@ -45,18 +53,19 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'guard-rspec'
   gem 'faker'
-
   # Use thin as webserver
   gem 'thin'
-  
 end
 
+# Production Environment which could be vastly different than your development env
 group :production do
+  # Database -- In production you might use something other than mysql, like heroku prefers pg
+  # gem 'mysql2'
   gem 'pg'
 end
 
 #######################################################
-# Uncomment this area if image uplaods will be used ###
+# Uncomment this area if image uploads will be used ###
 #######################################################
 
 # # Allows for the identification of a file's likely MIME content type
