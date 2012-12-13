@@ -1,5 +1,7 @@
 Buttress::Application.routes.draw do
 
+  namespace :admin do resources :users end
+
   # Routes for devise users (login logout register..etc)
   devise_for :users, :path => '', :path_names => {
       :sign_in => 'login',
