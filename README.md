@@ -1,6 +1,6 @@
-# buttress
+# Buttress
 
-Basic rails app setup with basic frontend framework, auth module, user roles, crud, etc.
+Collection of popular gems designed for rapid prototyping and application development wrapped into a basic, bare-bones application.
 
 ## What it is
 
@@ -31,16 +31,18 @@ and a few for testing:
 
 ## What it is not
 
-buttress is not the be-all-end-all rails application.  It is just a basic prototype of what an early application using a collection of popular ruby/rails gems.  
+Buttress is not the be-all-end-all rails application.  It is just a basic prototype of what an early application using a collection of popular ruby/rails gems.  
 
-These are not necessarily the best solutions, and your milage may vary.
-
-## Basic Usage
+## Quick Start Guide
 
 1. Create config/database.yml file with credentials for your db
 2. Customize application to fit your needs
 3. ???
 4. Profit
+
+## Usage Guide
+
+Coming soon.  Or you can write it.  See next section.
 
 ## Contributing
 Fork -> Fix -> Pull Request.  
@@ -50,9 +52,11 @@ Add your name to contributors list.
 Pull requests will merged as needed.
 
 ## Contributors
-[JDStrughan](http://github.com/JDStraughan)
+ - [JDStraughan](http://github.com/JDStraughan)
 
 ## License
+Copyright Jason Straughan, released under the MIT License.
+
 (The MIT License)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the ‘Software’), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
