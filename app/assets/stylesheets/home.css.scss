@@ -32,3 +32,11 @@ body {
   color: #999;
   font-weight: normal;
 }
+
+#fork-me {
+  position: absolute; 
+  z-index:9999;
+  top: 40px; 
+  right: 0; 
+  border: 0;
+}
