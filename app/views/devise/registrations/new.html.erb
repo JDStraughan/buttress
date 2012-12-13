@@ -1,24 +1,115 @@
-<h2>Sign up</h2>
+<% @body_role = 'auth' %>
 
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
-  <%= devise_error_messages! %>
+<div class="row">
 
-  <div><%= f.label :first_name %><br />
-  <%= f.text_field :first_name %></div>
-  
-  <div><%= f.label :last_name %><br />
-  <%= f.text_field :last_name %></div>
+  <div class="span6">
 
-  <div><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
+    <div class="row">
+      <div class="span5">
+        <h5>Lorem ipsum dolor sit amet</h5>
+        <p>Curabitur tincidunt augue sed sapien consequat ac volutpat erat luctus. Aenean sem ante, egestas et commodo ut, blandit at erat. Integer in ligula tortor. Quisque auctor lorem id ante pharetra scelerisque. Vivamus nec mauris quam. Duis ac suscipit quam. Integer pharetra mollis ullamcorper.</p>
+        <p>Cras tristique, magna vitae consequat dictum, lacus eros sollicitudin lacus, vitae fermentum lorem mi id lorem. </p>
+      </div>
+    </div>
 
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
+    <div class="row">
+      <div class="span5">
+        <h5>Lorem ipsum dolor sit amet</h5>
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur vel sapien nisi. Quisque ultricies, sem quis adipiscing facilisis, velit neque elementum odio, porta lacinia nulla ligula at ante. Integer blandit, felis et auctor sollicitudin, justo lacus tincidunt nibh, ac rutrum dolor orci a felis.</p>
+        <p>Cras tristique, magna vitae consequat dictum, lacus eros sollicitudin lacus, vitae fermentum lorem mi id lorem. </p>
+      </div>
+    </div>
 
-  <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
+    <div class="row">
+      <div class="span5">
+        <h5>Lorem ipsum dolor sit amet</h5>
+        <p>Sed ornare laoreet vehicula. Duis tincidunt nunc id sapien pharetra quis gravida quam aliquet. Nunc odio purus, varius at rutrum quis, eleifend in turpis.</p>
+        <p>Cras tristique, magna vitae consequat dictum, lacus eros sollicitudin lacus, vitae fermentum lorem mi id lorem. </p>
+      </div>
+    </div>
 
-  <div><%= f.submit "Sign up" %></div>
-<% end %>
+  </div>
 
-<%= render "devise/shared/links" %>
+  <div class='span6'>
+    <div class='row'>
+      <div class='registration'>
+        <div class='registration-header'>
+          <h3>Register</h3>
+        </div>
+        <div class='registration-body'>
+          <h4>Create you free account.</h4>
+          <p>You can upgrade, downgrade or cancel your account at any time.</p>
+          <hr />
+
+          <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:class => "form-signin form-horizontal"}) do |f| %>
+
+            <div class='control-group<%= " error" if resource.errors.has_key?(:first_name) %>'>
+              <%= f.label :first_name, :class => 'control-label' %>
+              <div class='controls'>
+                <%= f.text_field :first_name, :class => 'input-xlarge ', :placeholder => 'First Name (required)' %>
+                <% if resource.errors.has_key?(:first_name) %>
+                  <span class='help-inline'>First name <%= resource.errors.get(:first_name).first %></span>
+                <% end %>
+              </div>
+            </div>
+
+            <div class='control-group<%= " error" if resource.errors.has_key?(:last_name) %>'>
+              <%= f.label :last_name, :class => 'control-label' %>
+              <div class='controls'>
+                <%= f.text_field :last_name, :class => 'input-xlarge ', :placeholder => 'Last Name (required)' %>
+                <% if resource.errors.has_key?(:last_name) %>
+                  <span class='help-inline'>Last name <%= resource.errors.get(:last_name).first %></span>
+                <% end %>
+              </div>
+            </div>
+
+            <div class='control-group<%= " error" if resource.errors.has_key?(:email) %>'>
+              <%= f.label :email, :class => 'control-label' %>
+              <div class='controls'>
+                <%= f.email_field :email, :class => 'input-xlarge ', :placeholder => 'Email address (required)' %>
+                <% if resource.errors.has_key?(:email) %>
+                  <span class='help-inline'>Email Address <%= resource.errors.get(:email).first %></span>
+                <% end %>
+              </div>
+            </div>
+
+            <div class='control-group<%= " error" if resource.errors.has_key?(:password) %>'>
+              <%= f.label :password, :class => 'control-label' %>
+              <div class='controls'>
+                <%= f.password_field :password, :class => 'input-xlarge ', :placeholder => 'Password (required)' %>
+                <% if resource.errors.has_key?(:password) %>
+                  <span class='help-inline'>Password <%= resource.errors.get(:password).first %></span>
+                <% end %>
+              </div>
+            </div>
+
+            <div class='control-group<%= " error" if resource.errors.has_key?(:password_confirmation) %>'>
+              <%= f.label :password_confirmation, :class => 'control-label hidden' %>
+              <div class='controls'>
+                <%= f.password_field :password_confirmation, :class => 'input-xlarge ', :placeholder => 'Password Confirmation (required)' %>
+                <% if resource.errors.has_key?(:password_confirmation) %>
+                  <span class='help-inline'>Password <%= resource.errors.get(:password_confirmation).first %></span>
+                <% end %>
+              </div>
+            </div>
+
+            <div class='well'>
+
+              <div><%= f.submit "Create an Account", :class => 'btn btn-info btn-block' %></div>
+
+            </div>
+            <%= render "devise/shared/links" %>
+
+          <% end %>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+
+
