@@ -29,7 +29,8 @@ gem 'draper'
 gem 'enum_simulator'
 # Pagination
 gem 'will_paginate', '~> 3.0'
-# Need this for db:populate
+# Provides text comparison support
+gem "text", "~> 1.2.1"
 
 # Develop and Test Environments
 # Generally speaking this is for developing in webrick/thin on your local box -- not production
