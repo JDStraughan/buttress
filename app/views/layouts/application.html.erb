@@ -51,8 +51,12 @@
               <li><%= link_to "Issues", "https://github.com/JDStraughan/buttress/issues"  %></li>
             </ul>
             <ul class="nav pull-right">
-              <li><%= link_to "Sign In", new_user_session_path %></li>
-              <li><%= link_to "Register", new_user_registration_path  %></li>
+              <% if user_signed_in? %>
+                <%= @authed_user.menu %>
+              <% else %>
+                <li><%= link_to "Sign In", new_user_session_path %></li>
+                <li><%= link_to "Register", new_user_registration_path  %></li>
+              <% end %>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
