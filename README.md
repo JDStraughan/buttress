@@ -53,6 +53,7 @@ Pull requests will merged as needed.
 
 ## Contributors
  - [JDStraughan](http://github.com/JDStraughan)
+ - [Jason "Palamedes" Ellis](http://github.com/palamedes)
 
 ## License
 Copyright Jason Straughan, released under the MIT License.
