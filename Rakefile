@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-GroundFloor::Application.load_tasks
+Buttress::Application.load_tasks
