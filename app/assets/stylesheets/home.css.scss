@@ -34,8 +34,8 @@ body {
   font-weight: normal;
 }
 
-#fork-me {
-  position: absolute; 
+.fork-me {
+  position: fixed;
   z-index:9999;
   top: 40px; 
   right: 0; 
