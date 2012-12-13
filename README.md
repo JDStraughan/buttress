@@ -1,4 +1,4 @@
-# buttress
+# Buttress
 
 Collection of popular gems designed for rapid prototyping and application development wrapped into a basic, bare-bones application.
 
@@ -52,10 +52,10 @@ Add your name to contributors list.
 Pull requests will merged as needed.
 
 ## Contributors
-[JDStrughan](http://github.com/JDStraughan)
+ - [JDStraughan](http://github.com/JDStraughan)
 
 ## License
-Copyright Jason D Straughan, released under the MIT License.
+Copyright Jason Straughan, released under the MIT License.
 
 (The MIT License)
 
