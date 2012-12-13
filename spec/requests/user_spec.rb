@@ -9,7 +9,7 @@ describe 'UserRegistration' do
     fill_in 'Email', :with => 'newuser@example.com'
     fill_in 'user_password', :with => 'userpassword'
     fill_in 'user_password_confirmation', :with => 'userpassword'
-    click_button 'Register'
+    click_button 'Create an Account'
     page.should have_content 'Welcome! You have signed up successfully.'
   end
 end
