@@ -14,6 +14,8 @@ end
 
 # Twitter bootstrap baby
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+# Incase you want less
+gem 'less-rails'
 # json
 gem 'json'
 # jQuery is the win
