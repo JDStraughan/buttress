@@ -1,4 +1,4 @@
-# ground-floor
+# buttress
 
 Basic rails app setup with basic frontend framework, auth module, user roles, crud, etc.
 
@@ -31,7 +31,7 @@ and a few for testing:
 
 ## What it is not
 
-ground-floor is not the be-all-end-all rails application.  It is just a basic prototype of what an early application using a collection of popular ruby/rails gems.  
+buttress is not the be-all-end-all rails application.  It is just a basic prototype of what an early application using a collection of popular ruby/rails gems.  
 
 These are not necessarily the best solutions, and your milage may vary.
 
