@@ -1,0 +1,39 @@
+div.navbar-fixed-top {
+
+  ul[role=menu] {
+    margin-top: 4px;
+  }
+
+  ul.dropdown-menu {
+    top: 38px;
+    a.btn-disabled {
+      margin-left: 0 !important;
+      border-radius: 0;
+      border-left: 0;
+      border-right: 0;
+      text-align: left;
+      padding-left: 20px !important;
+    }
+  }
+
+  li.dropdown-submenu {
+    a b.caret {
+      border-bottom-color: #000;
+      border-top-color: #000;
+      margin-top: 8px;
+    }
+    a.btn-disabled b.caret {
+      border-top-color: #999;
+    }
+  }
+  li.dropdown-submenu > a {
+    background: none;
+    &:hover {
+      background: none;
+    }
+    &::after {
+      content: none;
+    }
+  }
+
+}
